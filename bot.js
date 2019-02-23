@@ -2,20 +2,6 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 
-
-
-client.on('ready', () => {
-   console.log(`----------------`);
-      console.log(`Desert Bot- Script By : EX Clan`);
-        console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
-    console.log(`----------------`);
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`!new|#,Hawaii,,Ticket!!!,"http://twitch.tv/Death Shop")
-client.user.setStatus("dnd")
-});
-
-
 function clean(text) {
     if (typeof(text) === "string")
       return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
